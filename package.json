@@ -1,0 +1,30 @@
+{
+  "name": "color-picker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "notchris <mail@chrismcgrane.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack && qode ./dist/index.js",
+    "debug": "webpack && qode --inspect ./dist/index.js"
+  },
+  "dependencies": {
+    "@nodegui/nodegui": "^0.41.0",
+    "@nodegui/os-utils": "^1.1.2",
+    "color": "^4.0.1"
+  },
+  "devDependencies": {
+    "@nodegui/packer": "^1.5.0",
+    "@types/color": "^3.0.2",
+    "@types/node": "^16.11.9",
+    "clean-webpack-plugin": "^4.0.0",
+    "file-loader": "^6.2.0",
+    "native-addon-loader": "^2.0.1",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1"
+  }
+}
